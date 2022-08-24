@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{color:blue;
+text-align: center;
+font-weight: 300;}
+
+*{box-sizing:border-box}
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+.skills {
+  text-align: center; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color:black; /* White text color */
+  
+}
+.java {width: 50%; background-color: #04AA6D;} /* Green */
+.csharp {width: 80%; background-color: #2196F3;} /* Blue */
+.node {width: 90%; background-color: #f44336;} /* Red */
+.comms {width: 90%; background-color:deepskyblue} /* Dark Grey */
+.teamwork{width:55%; background-color:yellow}
+/* Note: This example only works with Windows Insider Preview Builds 16237+ or the Fall Creators Update. */
+
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;  
+}
+
+header {
+	background: #707070;
+	grid-area: header;
+}
+
+nav {
+	/*background: #C9BFBF;*/
+    background-image: url('bgimage3.jpg');
+	grid-area: nav; 
+}
+
+
+section {
+	background: #ABABAB;
+	grid-area: section;   
+    text-align: justify; 
+}
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
+}
+
+footer {
+	background: #707070;
+	grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header> <div class='heading'><h1>My SKills</h1></div></header>
+<nav>nav</nav>
+<section> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam omnis ex, aspernatur quos reprehenderit laboriosam repudiandae debitis exercitationem maxime cumque culpa at veritatis, cupiditate possimus eos tempore incidunt molestiae, voluptate voluptatum porro. Odit dicta dignissimos illo libero magni animi accusantium! Unde neque odit magni aut magnam praesentium harum repellat, dolorum perspiciatis laboriosam temporibus fuga dignissimos enim quod at officia adipisci minus inventore aspernatur rerum qui esse accusantium ratione veritatis. Dolores corporis ut at corrupti repellat illum, aperiam fugiat! Sed laudantium beatae consequuntur blanditiis ullam quo quis id? Facilis, aliquam odio iure officia culpa amet, est libero accusantium fugit, quo cupiditate?</p>
+ 
+    <p>NodeJs</p>
+    <div class="container">
+    <div class="skills node">90%</div>
+    </div>
+    
+        <p>JAVA</p>
+    <div class="container">
+        <div class="skills java">50%</div>
+        </div>
+    
+        <p>C#</p>
+        <div class="container">
+            <div class="skills csharp">60%</div>
+        </div>
+    
+        <p>Communication</p>
+            <div class="container">
+                <div class="skills comms">90%</div>
+            </div>
+        <p>Teamwork</p>
+            <div class="container">
+                <div class="skills teamwork">55%</div>
+            </div></section>
+<aside>aside</aside>
+<footer>footer</footer>
+   
+   
+
+</body>
+</html>

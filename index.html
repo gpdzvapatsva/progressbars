@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .container{width:100%;
+    background-color: #ddd;}
+
+
+    .skills{
+        text-align:center;
+        padding-top:10px;
+        padding-bottom:10px;
+        color: black;
+    }
+
+    .Java{width:30%; background-color:green;}
+    .csharp{width:70%; background-color: red;}
+    .VB{width:90%; background-color:yellow;}
+    .comms{width:45%; background-color:blue;}
+    .teams{width:80%; background-color:saddlebrown;}
+
+        *{box-sizing:border-box}
+
+        body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;  
+}
+
+header {
+	background: #707070;
+	grid-area: header;
+}
+
+nav {
+	
+    background-image: url('bgimage3.jpg');
+	grid-area: nav; 
+}
+
+
+section {
+	background: #ABABAB;
+	grid-area: section;   
+    text-align: justify; 
+}
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
+}
+
+footer {
+	background: #707070;
+	grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header><h1 style="text-align:center">SKILLS</h1></header>
+    <nav><img src="Godwin.jfif"></nav>
+    <section>
+<p>Java</p>
+<div class="container">
+    <div class="skills Java">30%</div>
+</div>
+<p>C#</p>
+<div class="container">
+    <div class="skills csharp">75%</div>
+</div>
+
+<p>VB.NET</p>
+<div class="container">
+    <div class="skills VB">90%</div>
+</div>
+<p>Communication</p>
+<div class="container">
+    <div class="skills comms">45%</div>
+</div>
+<p>Teamwork</p>
+<div class="container">
+    <div class="skills teams">80%</div>
+</div>
+    </section>
+    <aside>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quidem iusto voluptatum! Esse, molestias cupiditate? Ea, sed ut? Laborum voluptates ducimus excepturi reiciendis odio veniam adipisci, animi quam tempore accusamus at quos accusantium? Natus nesciunt saepe aperiam voluptatum amet officiis cupiditate eius possimus. Illum sapiente iste quos laboriosam consequatur numquam.</aside>
+    <footer style="text-align: center"; >&copy; Godwin Dzvapatsva</footer>
+</body>
+</html>
